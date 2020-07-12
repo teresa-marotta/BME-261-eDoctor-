@@ -1,0 +1,17 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <div class="content-section">
+       <h2>Select Your Registration Path Here!</h2>
+       <a class="btn btn-primary btn-lg mt-1 mb-1" href="{% url 'register-patient' %}">Patient Registration
+       </a>
+       <a class="btn btn-primary btn-lg mt-1 mb-1"  href="{% url 'register-technician' %}">Technician Registration
+       </a>
+       <a class="btn btn-primary btn-lg mt-1 mb-1"  href="{% url 'register-doctor' %}">Doctor Registration
+       </a>
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+            </small>
+        </div>
+    </div>
+{% endblock content %}
